@@ -1,4 +1,6 @@
-## Stop Explaining Black Boxes: Why Interpretable Models Matter for High-Stakes Decisions
+---
+title: Stop Explaining Black Boxes: Why Interpretable Models Matter for High-Stakes Decisions
+---
 
 *A blog-style summary of the paper by Cynthia Rudin*
 
