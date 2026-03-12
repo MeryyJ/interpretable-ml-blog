@@ -7,9 +7,6 @@
 **Course:** Explainable AI  
 **Paper:** *Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead*
 
-> This article provides a blog-style summary of the paper  
-> **"Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead"** by Cynthia Rudin.
-
 ---
 
 ## Introduction
@@ -19,6 +16,7 @@ Machine learning systems increasingly influence decisions that deeply affect peo
 To address this lack of transparency, a large body of research has emerged under the umbrella of **Explainable Artificial Intelligence (XAI)**. The idea behind this approach is straightforward: if a model is too complex to interpret directly, additional techniques can be used to explain its predictions after they are produced.
 
 In her influential paper *"Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead,"* Cynthia Rudin challenges this approach. She argues that the real problem is not how to explain black-box models, but why we rely on them in the first place. Instead of explaining opaque models, we should focus on designing models that are interpretable by design.
+
 ---
 
 ## The Rise of Explainable Machine Learning
