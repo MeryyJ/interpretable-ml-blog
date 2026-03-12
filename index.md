@@ -9,7 +9,7 @@
 
 ---
 
-## Introduction
+## **Introduction**
 
 Machine learning systems increasingly influence decisions that deeply affect people's lives. Algorithms are now used in domains such as criminal justice, healthcare, finance, and public policy. Although these systems can improve efficiency and predictive performance, they often rely on complex models whose internal logic is difficult, and sometimes impossible, for humans to understand.
 
@@ -19,7 +19,7 @@ In her influential paper *"Stop Explaining Black Box Machine Learning Models for
 
 ---
 
-## The Rise of Explainable Machine Learning
+## **The Rise of Explainable Machine Learning**
 
 Modern machine learning models, particularly deep neural networks, are often described as **black boxes**. They can achieve impressive predictive performance, yet the reasoning behind their predictions is typically difficult for humans to understand.
 
@@ -39,7 +39,7 @@ Although this approach is intuitively appealing, Rudin argues that it relies on 
 
 ---
 
-## The Myth of the Accuracy–Interpretability Trade-off
+## **The Myth of the Accuracy–Interpretability Trade-off**
 
 A widely held belief in machine learning is that there exists an unavoidable trade-off between **accuracy and interpretability**. According to this view, simple models are easier for humans to understand but tend to be less powerful, while more complex models achieve higher predictive performance at the cost of transparency.
 
@@ -57,23 +57,23 @@ These observations challenge the common assumption that interpretability necessa
 
 ---
 
-## The Problem with Post-hoc Explanations
+## **The Problem with Post-hoc Explanations**
 
 Even when black-box models achieve high predictive accuracy, relying on post-hoc explanations raises several important concerns.
 
-### Explanations are approximations
+### **Explanations are approximations**
 
 Explanation models attempt to approximate the behavior of the original model. If an explanation were perfectly faithful, it would effectively reproduce the original model itself. In practice, however, explanation methods inevitably rely on simplifications.
 
 As a result, explanations may only capture the model's behavior in certain regions of the input space. Outside those regions, the explanation may fail to represent the model accurately and can therefore be misleading.
 
-### Explanations may attribute importance to the wrong variables
+### **Explanations may attribute importance to the wrong variables**
 
 Because explanation models approximate the original system, they may rely on different features than the underlying model. Consequently, an explanation might suggest that a prediction was influenced by variables that were not actually used in the model's computation.
 
 This issue becomes particularly problematic in sensitive contexts such as criminal justice or credit scoring, where explanations can shape how people perceive fairness, bias, and accountability.
 
-### Some explanations provide limited insight
+### **Some explanations provide limited insight**
 
 In domains such as computer vision, explanation methods often take the form of **saliency maps**, which highlight the regions of an image that influence the model's prediction.
 
@@ -83,25 +83,25 @@ In such situations, explanations may create an illusion of understanding without
 
 ---
 
-## Why Black Box Models Persist
+## **Why Black Box Models Persist**
 
 If interpretable models can often achieve performance comparable to that of black-box models, a natural question arises: why do opaque models remain so widely used in practice?
 
 Several factors help explain their continued dominance.
 
-### Economic incentives
+### **Economic incentives**
 
 Black-box models are frequently proprietary. Companies can protect them as intellectual property and sell them as commercial products or services. Transparent models, in contrast, are easier to replicate and therefore more difficult to monetize.
 
 This creates a clear economic incentive for organizations to favor complex and opaque systems, even when simpler and more interpretable alternatives may exist.
 
-### Convenience and tooling
+### **Convenience and tooling**
 
 Another important factor is the current machine learning ecosystem. Many popular frameworks and libraries are optimized for training complex models such as deep neural networks or ensemble methods. These tools make it easy to deploy powerful models with relatively little effort.
 
 By contrast, interpretable machine learning methods often require more careful design and domain knowledge, and the available tools are less mature. As a result, practitioners may default to using black-box models simply because they are easier to implement.
 
-### The belief in “hidden patterns”
+### **The belief in “hidden patterns”**
 
 Finally, there is a widespread perception that complex models are uniquely capable of discovering subtle patterns in data that would otherwise remain hidden.
 
@@ -109,11 +109,11 @@ While this assumption can sometimes hold, Rudin argues that interpretable models
 
 ---
 
-## Building Interpretable Models: Algorithmic Challenges
+## **Building Interpretable Models: Algorithmic Challenges**
 
 Designing interpretable models is not always straightforward. Rudin emphasizes that building models which are both accurate and understandable often involves significant algorithmic challenges. In particular, several families of interpretable models require solving difficult optimization problems.
 
-### Logical models
+### **Logical models**
 
 Logical models represent predictions through simple rules, such as:
 
@@ -126,9 +126,7 @@ However, constructing an optimal set of rules can be computationally challenging
 
 Algorithms such as CORELS address this challenge by efficiently exploring the space of rule-based models in order to identify optimal or near-optimal rule lists.
 
----
-
-### Sparse scoring systems
+### **Sparse scoring systems**
 
 Another important class of interpretable models consists of **scoring systems**, where predictions are obtained by summing a small number of weighted factors.
 
@@ -147,9 +145,7 @@ However, learning optimal scoring systems directly from data is difficult. The m
 
 Algorithms such as RiskSLIM have been developed to construct sparse scoring systems while maintaining strong predictive performance.
 
----
-
-### Domain-specific interpretability
+### **Domain-specific interpretability**
 
 Interpretability is not defined in the same way across all domains. In some applications, traditional approaches such as sparsity may not be sufficient.
 
@@ -161,7 +157,7 @@ In this setting, explanations are not generated after the prediction. Instead, t
 
 ---
 
-## The Rashomon Effect in Machine Learning
+## **The Rashomon Effect in Machine Learning**
 
 A central insight in Rudin's argument is the concept of the **Rashomon set**.
 
@@ -175,7 +171,7 @@ The real challenge, therefore, may lie less in the existence of interpretable mo
 
 ---
 
-## Implications for AI Governance
+## **Implications for AI Governance**
 
 The debate between explainability and interpretability has important implications for the governance and regulation of artificial intelligence.
 
@@ -187,7 +183,7 @@ Adopting such a principle would encourage organizations to prioritize transparen
 
 ---
 
-## Conclusion
+## **Conclusion**
 
 The growing field of explainable AI reflects an important concern: the need to make machine learning systems more transparent and trustworthy. However, the widespread assumption that complex black-box models are unavoidable may be misguided.
 
@@ -198,21 +194,6 @@ In many high-stakes applications, interpretable models can provide a compelling 
 If this perspective gains wider acceptance, the future of trustworthy machine learning may not lie in explaining black boxes, but in **designing models that are interpretable from the outset.**
 
 
-## References
+## **References**
 
 Rudin, C. (2019). *Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead*. Nature Machine Intelligence.
-
-### BibTeX Citation
-
-```bibtex
-@article{rudin2019stop,
-  title={Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead},
-  author={Rudin, Cynthia},
-  journal={Nature Machine Intelligence},
-  volume={1},
-  number={5},
-  pages={206--215},
-  year={2019},
-  publisher={Nature Publishing Group}
-}
-```
